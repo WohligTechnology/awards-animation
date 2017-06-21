@@ -10,9 +10,9 @@ $brand-info: #000072 !default;
 /* Bootstrap Variables Goes Here */
 
 @import "other/font-fix";
-body {
-    padding-top: 70px;
-}
+// body {
+//     padding-top: 70px;
+// }
 
 img.loading {
     text-align: center;
@@ -118,4 +118,9 @@ header {
 
 .nav-up {
     transform: translateY(-100%);
+}
+
+.awards-animation {
+    height: 100vh;
+    background: #000;
 }
