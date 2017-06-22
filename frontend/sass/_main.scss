@@ -120,7 +120,52 @@ header {
     transform: translateY(-100%);
 }
 
+
+.relative{
+     @include position(relative, 0 null null 10em);
+}
+.absolute{
+@include position(absolute, 0 null null null null);
+}
+
+//home start
 .awards-animation {
     height: 100vh;
     background: #000;
+}
+.awards-animation-bg{
+    background-image: url('../img/cnbcbgimgs/bg.jpg');
+    height: 100%;
+    width:auto;
+    // background-position: center center;
+    background-repeat: no-repeat;
+    @include position(relative);
+    background-size: cover;
+
+}
+.car{
+    @include position(absolute);
+//   @include transform(scale(0.9) rotate(-3deg));
+top:180px;
+
+}
+.w{
+    width: 57%;
+}
+
+.mobil-bg{
+         @include position(absolute);
+         left: 37%;
+}
+.mobil{
+       @include position(absolute);
+       left:39%;
+       top:2%;
+}
+.w-62{
+    width: 62%;
+}
+.w-56{
+    width: 56%;
+        margin-top: 43px;
 }
