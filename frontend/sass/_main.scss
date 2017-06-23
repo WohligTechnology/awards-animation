@@ -148,26 +148,26 @@ header {
     bottom: -20px;
 }
 
-
-
 .mobil-bg {
-position: relative;
-    width: 40%;
+    position: absolute;
+    width: 28%;
     margin: 0 auto;
-    bottom: 0;
+    bottom: 14%;
+    left: 50%;
+    @include transform (translateX(-50%));
     .mobil {
-    position: absolute;
-    left: 39%;
-    top: 15%;
-}
-.overdrive {
-    position: absolute;
-    left: 15%;
-    top: 15%;
-}
-.w-100 {
-    width: 100%;
-}
+        position: absolute;
+        left: 39%;
+        top: 15%;
+    }
+    .overdrive {
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    }
+    .w-100 {
+        width: 100%;
+    }
 }
 
 .w-62 {
