@@ -13,7 +13,6 @@ $brand-info: #000072 !default;
 // body {
 //     padding-top: 70px;
 // }
-
 img.loading {
     text-align: center;
     opacity: 1;
@@ -120,59 +119,61 @@ header {
     transform: translateY(-100%);
 }
 
-
-.relative{
-     @include position(relative, 0 null null 10em);
+.relative {
+    @include position(relative, 0 null null 10em);
 }
-.absolute{
-@include position(absolute, 0 null null null null);
+
+.absolute {
+    @include position(absolute, 0 null null null null);
 }
 
 //home start
 .awards-animation {
     height: 100vh;
     background: #000;
+    overflow: hidden;
+    .awards-animation-bg {
+        background-image: url('../img/cnbcbgimgs/bg.jpg');
+        height: 100%;
+        width: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include position(relative);
+        background-size: cover;
+    }
 }
-.awards-animation-bg{
-    background-image: url('../img/cnbcbgimgs/bg.jpg');
-    height: 100%;
-    width:auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-    @include position(relative);
-    background-size: cover;
 
-}
-.car{
+.car {
     @include position(absolute);
-//   @include transform(scale(0.9) rotate(-3deg));
-// top:180px;
-bottom: -20px;
-
-}
-.w-57{
-    width: 57%;
+    bottom: -20px;
 }
 
-.mobil-bg{
-         @include position(absolute);
-         left: 37%;
+
+
+.mobil-bg {
+position: relative;
+    width: 40%;
+    margin: 0 auto;
+    bottom: 0;
+    .mobil {
+    position: absolute;
+    left: 39%;
+    top: 15%;
 }
-.mobil{
-       @include position(absolute);
-       left:39%;
-    //    top:2%;
-    bottom:84%;
+.overdrive {
+    position: absolute;
+    left: 15%;
+    top: 15%;
 }
-.overdrive{
-    @include position(absolute);
-       left:39%;
-       bottom: 65%;
+.w-100 {
+    width: 100%;
 }
-.w-62{
+}
+
+.w-62 {
     width: 62%;
 }
-.w-56{
+
+.w-56 {
     width: 56%;
-        // margin-top: 43px;
 }

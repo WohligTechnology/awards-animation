@@ -9228,37 +9228,36 @@ header {
 
 .awards-animation {
   height: 100vh;
-  background: #000; }
-
-.awards-animation-bg {
-  background-image: url("../img/cnbcbgimgs/bg.jpg");
-  height: 100%;
-  width: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover; }
+  background: #000;
+  overflow: hidden; }
+  .awards-animation .awards-animation-bg {
+    background-image: url("../img/cnbcbgimgs/bg.jpg");
+    height: 100%;
+    width: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover; }
 
 .car {
   position: absolute;
   bottom: -20px; }
 
-.w-57 {
-  width: 57%; }
-
 .mobil-bg {
-  position: absolute;
-  left: 37%; }
-
-.mobil {
-  position: absolute;
-  left: 39%;
-  bottom: 84%; }
-
-.overdrive {
-  position: absolute;
-  left: 39%;
-  bottom: 65%; }
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+  bottom: 0; }
+  .mobil-bg .mobil {
+    position: absolute;
+    left: 39%;
+    top: 15%; }
+  .mobil-bg .overdrive {
+    position: absolute;
+    left: 15%;
+    top: 15%; }
+  .mobil-bg .w-100 {
+    width: 100%; }
 
 .w-62 {
   width: 62%; }
