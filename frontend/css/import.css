@@ -9241,9 +9241,9 @@ header {
 
 .car {
   position: absolute;
-  top: 180px; }
+  bottom: -20px; }
 
-.w {
+.w-57 {
   width: 57%; }
 
 .mobil-bg {
@@ -9253,14 +9253,18 @@ header {
 .mobil {
   position: absolute;
   left: 39%;
-  top: 2%; }
+  bottom: 84%; }
+
+.overdrive {
+  position: absolute;
+  left: 39%;
+  bottom: 65%; }
 
 .w-62 {
   width: 62%; }
 
 .w-56 {
-  width: 56%;
-  margin-top: 43px; }
+  width: 56%; }
 
 #fancybox-loading,
 .fancybox-close,
